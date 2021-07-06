@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Music Player</h1>
+    <div class="container">
+      <div class="music-container">
+        <div class="album-image">
+          <img src="" alt="" />
+        </div>
+        <div class="track-details">
+          <h2 class="track-title">Jundullah</h2>
+          <h4 class="artist">Muhammad Al-Muqit</h4>
+        </div>
+        <audio
+          src="sounds/Faslon Ko Takaluf Hay Ham Se Agar.mp3"
+          class="audio"
+        ></audio>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+        <div class="btn-container">
+          <button class="btn random">
+            <i class="fas fa-random"></i>
+          </button>
+          <button class="btn previous">
+            <i class="fas fa-angle-double-left"></i>
+          </button>
+          <button class="btn action"><i class="fas fa-play"></i></button>
+          <button class="btn next">
+            <i class="fas fa-angle-double-right"></i>
+          </button>
+
+          <button class="btn loop">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Container End -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
