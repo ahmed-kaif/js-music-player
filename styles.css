@@ -1,3 +1,11 @@
+/* 
+Background color:  #fffffe
+Main color: #d1d1e9
+Highlight color: #e45858
+text color: #2b2c34
+Btn color: #6246ea
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +13,11 @@
 h1,
 h2,
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fffffe;
 }
 
 .container {
@@ -14,10 +26,11 @@ h4 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  height: 80vh;
-  width: 50vw;
-  background-color: burlywood;
-  border-radius: 20px;
+  height: 97vh;
+  width: 435px;
+  background-color: #d1d1e9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .music-container {
@@ -25,14 +38,25 @@ h4 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 500px;
+  width: 400px;
+  border-radius: 10px;
 }
 
 .album-image {
+  position: relative;
   height: 150px;
   width: 150px;
-  background-color: crimson;
+  background-color: #e45858;
   border-radius: 50%;
+}
+
+.disc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fffffe;
 }
 
 .track-details {
@@ -40,20 +64,22 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #2b2c34;
 }
 .track-title {
   font-size: 28px;
 }
 
 .progress-container {
-  background-color: white;
+  background-color: #fff3ec;
   height: 5px;
   width: 100%;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .progress {
   height: 5px;
-  background-color: teal;
+  background-color: #e45858;
   width: 0;
 }
 .btn-container {
@@ -63,11 +89,15 @@ h4 {
 .btn {
   font-size: 16px;
   padding: 10px 20px 10px 20px;
-  margin: 10px;
-  background-color: white;
+  margin: 9px;
+  background-color: #6246ea;
   outline: none;
   border: 0;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+i {
+  color: #fffffe;
 }
 
 .action {
@@ -76,5 +106,5 @@ h4 {
 }
 
 .selected {
-  background-color: lightslategray;
+  background-color: #3714e6;
 }
