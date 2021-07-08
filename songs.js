@@ -14,6 +14,11 @@ const songs = [
     artist: 'Muhammad Al Muqit',
     path: './sounds/sabeeluna.mp3',
   },
+  {
+    title: 'Ghum Gari',
+    artist: 'Arnob',
+    path: './sounds/Ghum Gari.mp3',
+  },
 ]
 
 export default songs
