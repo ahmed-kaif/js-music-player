@@ -23,6 +23,11 @@ const songs = [
     title: 'Mora Mrittujoyi',
     artist: 'Faiyaz',
     path: './sounds/mora.m4a',
+  },
+  {
+    title: 'Iltija',
+    artist: 'Maulana Amir Osmani',
+    path: './sounds/iltija.mp3',
   }
 ]
 
