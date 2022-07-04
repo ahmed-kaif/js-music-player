@@ -20,11 +20,6 @@ const songs = [
     path: './sounds/Ghum Gari.mp3',
   },
   {
-    title: 'Hum Nugmaye Qurani',
-    artist: 'Sheikh Anam',
-    path: './sounds/hum nugmaye qurani.m4a',
-  },
-  {
     title: 'Iltija',
     artist: 'Maulana Amir Osmani',
     path: './sounds/iltija.mp3',
