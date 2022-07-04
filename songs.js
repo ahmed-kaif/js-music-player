@@ -20,9 +20,9 @@ const songs = [
     path: './sounds/Ghum Gari.mp3',
   },
   {
-    title: 'Mora Mrittujoyi',
-    artist: 'Faiyaz',
-    path: './sounds/mora.m4a',
+    title: 'Hum Nugmaye Qurani',
+    artist: 'Sheikh Anam',
+    path: './sounds/hum nugmaye qurani.m4a',
   },
   {
     title: 'Iltija',
