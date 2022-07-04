@@ -19,6 +19,11 @@ const songs = [
     artist: 'Arnob',
     path: './sounds/Ghum Gari.mp3',
   },
+  {
+    title: 'Mora Mrittujoyi',
+    artist: 'Faiyaz',
+    path: './sounds/mora.m4a',
+  }
 ]
 
 export default songs
