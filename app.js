@@ -19,8 +19,14 @@ const siteUrl = new URL(window.location)
 
 //current song Index
 let songIndex = 0
+let queryParam = new URLSearchParams(siteUrl.search)
 
-loadSong(Songs[songIndex].path)
+if(!queryParam.has('nasheed')){
+  loadSong(Songs[songIndex].path)
+} else {
+  songIndex = getIndexFromQuery()
+  loadSong(Songs[songIndex].path)
+}
 
 // Update The URL parameter To current song
 
@@ -31,6 +37,13 @@ function updateUrl(path) {
     var newurl = siteUrl.protocol + "//" + siteUrl.host + siteUrl.pathname + siteUrl.search;
     window.history.pushState({path:newurl},'',newurl);
 }
+}
+
+function getIndexFromQuery() {
+  if(queryParam.has('nasheed')){
+  let newIndex = Songs.findIndex( Song => Song.path.includes(queryParam.get('nasheed')))
+  return newIndex   
+  }
 }
 
 function loadSong(path) {
