@@ -15,16 +15,29 @@ const albumImage = document.querySelector('.album-image')
 const audio = document.querySelector('.audio')
 const currentTime = document.querySelector('.current-time')
 const audioDuration = document.querySelector('.duration')
+const siteUrl = new URL(window.location)
 
 //current song Index
 let songIndex = 0
 
 loadSong(Songs[songIndex].path)
 
+// Update The URL parameter To current song
+
+function updateUrl(path) {
+  let newPath= path.split("/")[2]
+  siteUrl.searchParams.set('nasheed', `${newPath}`)
+  if (history.pushState) {
+    var newurl = siteUrl.protocol + "//" + siteUrl.host + siteUrl.pathname + siteUrl.search;
+    window.history.pushState({path:newurl},'',newurl);
+}
+}
+
 function loadSong(path) {
   audio.setAttribute('src', `${path}`)
   trackTitle.innerHTML = Songs[songIndex].title
   artist.innerHTML = Songs[songIndex].artist
+  updateUrl(path) // updates the url
 }
 
 //######### Progress Bar Related functions #########
