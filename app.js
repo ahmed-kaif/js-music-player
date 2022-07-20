@@ -50,6 +50,7 @@ function getIndexFromQuery() {
 // Updates The Page Title
 function updateMetaTitle(title) {
   siteTitle = title
+  document.title = siteTitle
 }
 
 function loadSong(path) {
