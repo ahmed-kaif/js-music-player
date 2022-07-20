@@ -16,7 +16,7 @@ const songs = [
   },
   {
     title: 'Sabeeluna',
-    artist: 'Muhammad Al Muqit',
+    artist: 'Unknown',
     path: './sounds/sabeeluna.mp3',
   },
   {
@@ -40,9 +40,24 @@ const songs = [
     path: './sounds/khun-ranga-poth.mp3',
   },
   {
+    title: 'Tobu Mora Durjoy',
+    artist: 'Ahmad Faiyaaz',
+    path: './sounds/tobu-mora-durjoy.mp3',
+  },
+  {
     title: 'Nazre Karam Sarkar',
     artist: 'Haji Yousuf Moomen',
     path: './sounds/nazre-karam-sarkar.mp3',
+  },
+  {
+    title: 'Tabisrah',
+    artist: 'Muhammad Al Muqit',
+    path: './sounds/tabsirah.mp3',
+  },
+  {
+    title: 'Khuddimana',
+    artist: 'Khalid Al Haqan',
+    path: './sounds/khuddimana.mp3',
   }
 ]
 
