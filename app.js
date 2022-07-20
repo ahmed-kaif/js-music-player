@@ -20,7 +20,7 @@ const siteUrl = new URL(window.location)
 //current song Index
 let songIndex = 0
 let queryParam = new URLSearchParams(siteUrl.search)
-let siteTitle = window.title
+let siteTitle = document.title
 
 if(!queryParam.has('nasheed')){
   loadSong(Songs[songIndex].path)
