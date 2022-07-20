@@ -20,6 +20,7 @@ const siteUrl = new URL(window.location)
 //current song Index
 let songIndex = 0
 let queryParam = new URLSearchParams(siteUrl.search)
+let siteTitle = window.title
 
 if(!queryParam.has('nasheed')){
   loadSong(Songs[songIndex].path)
@@ -46,11 +47,17 @@ function getIndexFromQuery() {
   }
 }
 
+// Updates The Page Title
+function updateMetaTitle(title) {
+  siteTitle = title
+}
+
 function loadSong(path) {
   audio.setAttribute('src', `${path}`)
   trackTitle.innerHTML = Songs[songIndex].title
   artist.innerHTML = Songs[songIndex].artist
   updateUrl(path) // updates the url
+  updateMetaTitle(Songs[songIndex].title) // updates the page title to current song title
 }
 
 //######### Progress Bar Related functions #########
