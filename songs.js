@@ -30,6 +30,11 @@ const songs = [
     path: './sounds/iltija.mp3',
   },
   {
+    title: 'ইলাইকা',
+    artist: 'মুহাম্মাদ উবায়েদ',
+    path: './sounds/Ilaika.mp3',
+  },
+  {
     title: 'সার তান সে জুদা',
     artist: 'হাফিয হাসসান আনজার',
     path: './sounds/sar-tan-se-juda.mp3',
