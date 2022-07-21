@@ -27,8 +27,8 @@ body {
   margin: auto;
   /* height: 97vh; */
   padding: 1%;
-  width: 35%;
-  min-width: 25em;
+  width: 27%;
+  min-width: 360px;
   background-color: rgba(163, 144, 104, 0.808);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -129,7 +129,6 @@ body {
 .btn {
   font-size: 16px;
   /* padding: 10px 20px 10px 20px; */
-  /* padding: 10px; */
   width: 50px;
   height: 50px;
   margin: 9px;
