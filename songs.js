@@ -35,6 +35,11 @@ const songs = [
     path: './sounds/Ilaika.mp3',
   },
   {
+    title: 'ইয়াওমুল মাজিদ | বৃদ্ধির দিন',
+    artist: 'শাইখ ইদ্রিস আবকার',
+    path: './sounds/yawmul-mazid.mp3',
+  },
+  {
     title: 'সার তান সে জুদা',
     artist: 'হাফিয হাসসান আনজার',
     path: './sounds/sar-tan-se-juda.mp3',
