@@ -16,8 +16,16 @@ Btn color: #6246ea
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* background-image: url(../images/dot-grid.png); */
   background-color: var(--nord5);
+}
+a {
+  text-decoration: none;
+  font-family: 'Roboto Slab',Arial, Helvetica, sans-serif;
+  color: var(--nord10);
 }
 
 .container {
@@ -157,4 +165,14 @@ i {
 
 .selected {
   background-color: var(--nord12) ;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  font-family: 'Roboto Slab',Arial, Helvetica, sans-serif;
+  color: var(--nord1);
+}
+.love {
+  color: var(--nord11);
 }
