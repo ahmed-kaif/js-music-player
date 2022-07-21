@@ -12,12 +12,7 @@ Btn color: #6246ea
 
 * {
   box-sizing: border-box;
-}
-
-h1,
-h2,
-h4 {
-  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-family: 'Hind Siliguri','Roboto Slab', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -32,8 +27,8 @@ body {
   margin: auto;
   /* height: 97vh; */
   padding: 1%;
-  width: 50%;
-  min-width: 26em;
+  width: 35%;
+  min-width: 25em;
   background-color: rgba(163, 144, 104, 0.808);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -92,14 +87,20 @@ body {
   color: #2b2c34;
 }
 .track-title {
-  font-size: 28px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.artist {
+  margin-top: -10px;
+  font-size: 20px;
 }
 
 .time-container {
   display: flex;
   justify-content: space-between;
   width: 98%;
-  font-family: 'Roboto Slab';
+  font-family: 'Hind Siliguri','Roboto Slab';
   margin-bottom: 5px;
 }
 
@@ -120,16 +121,22 @@ body {
 }
 .btn-container {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .btn {
   font-size: 16px;
-  padding: 10px 20px 10px 20px;
+  /* padding: 10px 20px 10px 20px; */
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
   margin: 9px;
   background-color: #444444;
   outline: none;
   border: 0;
-  border-radius: 5px;
+  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: background-color ease-in 0.2s;
 }
@@ -143,8 +150,7 @@ i {
 }
 
 .action {
-  font-size: 25px;
-  padding: 10px 20px 10px 20px;
+  /* padding: 10px 20px 10px 20px; */
 }
 
 .selected {
