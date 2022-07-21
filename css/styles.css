@@ -16,7 +16,8 @@ Btn color: #6246ea
 }
 
 body {
-  background-image: url(../images/dot-grid.png);
+  /* background-image: url(../images/dot-grid.png); */
+  background-color: var(--nord5);
 }
 
 .container {
@@ -29,7 +30,7 @@ body {
   padding: 1%;
   width: 27%;
   min-width: 360px;
-  background-color: rgba(163, 144, 104, 0.808);
+  background-color: var(--nord1);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
@@ -48,7 +49,8 @@ body {
   position: relative;
   height: 150px;
   width: 150px;
-  background-color: #000;
+  background-color: var(--nord0);
+  border: 2px solid var(--nord11);
   border-radius: 50%;
   margin-top: 1em;
   /* transition: transform ease-in 0.1s; */
@@ -72,7 +74,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
-  color: #fffffe;
+  color: var(--nord5);
 }
 
 /* .album-image:hover {
@@ -84,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #2b2c34;
+  color: var(--nord4);
 }
 .track-title {
   font-size: 35px;
@@ -102,10 +104,11 @@ body {
   width: 98%;
   font-family: 'Hind Siliguri','Roboto Slab';
   margin-bottom: 5px;
+  color: var(--nord4);
 }
 
 .progress-container {
-  background-color: #fff3ec;
+  background-color: var(--nord5);
   height: 0.35em;
   width: 98%;
   margin-bottom: 10px;
@@ -115,7 +118,7 @@ body {
 .progress {
   height: 100%;
   border-radius: 20em;
-  background-color: #e45858;
+  background-color: var(--nord11);
   width: 0;
   transition: width ease-in 200ms;
 }
@@ -132,7 +135,7 @@ body {
   width: 50px;
   height: 50px;
   margin: 9px;
-  background-color: #444444;
+  background-color: var(--nord11);
   outline: none;
   border: 0;
   border-radius: 50%;
@@ -142,10 +145,10 @@ body {
 
 .btn:hover {
   cursor: pointer;
-  background-color: #333333;
+  background-color: #aa4d57;
 }
 i {
-  color: #fffffe;
+  color: var(--nord5);
 }
 
 .action {
@@ -153,5 +156,5 @@ i {
 }
 
 .selected {
-  background-color: #3714e6;
+  background-color: var(--nord12) ;
 }
