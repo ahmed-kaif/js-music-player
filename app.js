@@ -15,6 +15,7 @@ const albumImage = document.querySelector('.album-image')
 const audio = document.querySelector('.audio')
 const currentTime = document.querySelector('.current-time')
 const audioDuration = document.querySelector('.duration')
+// const playlistContainer = document.querySelector('.playlist-container')
 const siteUrl = new URL(window.location)
 
 //current song Index
@@ -28,7 +29,7 @@ if(!queryParam.has('nasheed')){
   songIndex = getIndexFromQuery()
   loadSong(Songs[songIndex].path)
 }
-
+// console.log(playlistContainer)
 // Update The URL parameter To current song
 
 function updateUrl(path) {
@@ -52,6 +53,22 @@ function updateMetaTitle(title) {
   siteTitle = title
   document.title = siteTitle
 }
+
+// function getAllSongTitle() {
+//   Songs.forEach((song, index) => {
+//     let div = document.createElement('btn');
+//     div.id = `${index}`
+//     div.className = 'title list-btn';
+//     div.innerText=`${song.title}`
+//     playlistContainer.appendChild(div)
+//     div.addEventListener('click', ()=>{
+//       songIndex = index
+//       loadSong(song.path)
+//       playSong()
+//     })
+//   })
+// }
+// getAllSongTitle()
 
 function loadSong(path) {
   audio.setAttribute('src', `${path}`)

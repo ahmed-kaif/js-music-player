@@ -43,6 +43,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+/* Music Container */
 .music-container {
   display: flex;
   flex-direction: column;
@@ -150,6 +151,30 @@ a {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: background-color ease-in 0.2s;
 }
+
+/* END Music Container */
+
+/* Playlist Container */
+
+/* .list-btn {
+  display: block;
+  width: 100%;
+  padding: 2px 0 2px 0;
+  cursor: pointer;
+  
+}
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  padding: 1%;
+  width: 27%;
+  min-width: 360px;
+  background-color: var(--nord1);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  color: var(--nord4);
+} */
 
 .btn:hover {
   cursor: pointer;
