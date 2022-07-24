@@ -47,12 +47,12 @@ const songs = [
   {
     title: 'সিদ্দিকে আকবার (রাঃ)',
     artist: 'যুবায়ের কাসেমী',
-    path: './sounds/siddeqe-akbar.mp3',
+    path: './sounds/siddiqe-akbar.mp3',
   },
   {
     title: 'উমার তুঝ সা যামানে নে',
     artist: 'যুবায়ের কাসেমী',
-    path: './sounds/umar-tujh-as-jamane-ne.mp3',
+    path: './sounds/umar-tujh-sa-jamane-ne.mp3',
   },
   {
     title: 'খুন রাঙ্গা পথ',
