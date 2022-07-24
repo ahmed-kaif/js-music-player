@@ -45,6 +45,16 @@ const songs = [
     path: './sounds/sar-tan-se-juda.mp3',
   },
   {
+    title: 'সিদ্দিকে আকবার (রাঃ)',
+    artist: 'যুবায়ের কাসেমী',
+    path: './sounds/siddeqe-akbar.mp3',
+  },
+  {
+    title: 'উমার তুঝ সা যামানে নে',
+    artist: 'যুবায়ের কাসেমী',
+    path: './sounds/umar-tujh-as-jamane-ne.mp3',
+  },
+  {
     title: 'খুন রাঙ্গা পথ',
     artist: 'আহমাদ ফাইয়াজ',
     path: './sounds/khun-ranga-poth.mp3',
