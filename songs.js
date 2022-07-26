@@ -65,6 +65,11 @@ const songs = [
     path: './sounds/tobu-mora-durjoy.mp3',
   },
   {
+    title: 'আসসীনু লানা',
+    artist: 'Unknown',
+    path: './sounds/assinu-lana.mp3',
+  },
+  {
     title: 'নাজরে কারাম সারকার',
     artist: 'হাজী ইউসুফ মোমেন',
     path: './sounds/nazre-karam-sarkar.mp3',
