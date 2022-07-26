@@ -6,7 +6,7 @@ const songs = [
   },
   {
     title: 'পথের দূরত্ব',
-    artist: 'ইবরাহীম কামাল শাফিন',
+    artist: 'ইবরাহীম কামরুল শাফিন',
     path: './sounds/pather-durotto.mp3',
   },
   {
@@ -71,7 +71,7 @@ const songs = [
   },
   {
     title: 'নাজরে কারাম সারকার',
-    artist: 'হাজী ইউসুফ মোমেন',
+    artist: 'হাজী ইউসুফ মেমোন',
     path: './sounds/nazre-karam-sarkar.mp3',
   },
   {
