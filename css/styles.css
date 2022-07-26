@@ -33,6 +33,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   margin: auto;
   /* height: 97vh; */
   padding: 1%;
@@ -156,13 +157,16 @@ a {
 
 /* Playlist Container */
 
-/* .list-btn {
+.list-btn {
   display: block;
   width: 100%;
-  padding: 2px 0 2px 0;
+  padding: 5px ;
   cursor: pointer;
-  
+  color: var(--nord4);
+  font-size: 18px;
+  margin-left: 5px;
 }
+/*
 .playlist-container {
   display: flex;
   flex-direction: column;
@@ -200,4 +204,46 @@ footer{
 }
 .love {
   color: var(--nord11);
+}
+
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  max-height: 100%;
+  background-color: var(--nord0);
+  width: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: 0.5s;
+}
+.show {
+  width: 50%;
+}
+.sidenav a,
+.sidenav button {
+  padding: 5px;
+  text-decoration: none;
+  color: var(--nord4);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .close-btn {
+  top: 0;
+  left: 0px;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 85%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

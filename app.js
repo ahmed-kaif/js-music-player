@@ -17,6 +17,9 @@ const currentTime = document.querySelector('.current-time')
 const audioDuration = document.querySelector('.duration')
 // const playlistContainer = document.querySelector('.playlist-container')
 const siteUrl = new URL(window.location)
+const playlistBtn = document.querySelector('.playlist-btn')
+const playlist = document.querySelector('.sidenav')
+const closeBtn = document.querySelector('.close-btn')
 
 //current song Index
 let songIndex = 0
@@ -54,21 +57,21 @@ function updateMetaTitle(title) {
   document.title = siteTitle
 }
 
-// function getAllSongTitle() {
-//   Songs.forEach((song, index) => {
-//     let div = document.createElement('btn');
-//     div.id = `${index}`
-//     div.className = 'title list-btn';
-//     div.innerText=`${song.title}`
-//     playlistContainer.appendChild(div)
-//     div.addEventListener('click', ()=>{
-//       songIndex = index
-//       loadSong(song.path)
-//       playSong()
-//     })
-//   })
-// }
-// getAllSongTitle()
+function getAllSongTitle() {
+  Songs.forEach((song, index) => {
+    let div = document.createElement('btn');
+    div.id = `${index}`
+    div.className = 'title list-btn';
+    div.innerText=`${song.title}`
+    playlist.appendChild(div)
+    div.addEventListener('click', ()=>{
+      songIndex = index
+      loadSong(song.path)
+      playSong()
+    })
+  })
+}
+getAllSongTitle()
 
 function loadSong(path) {
   audio.setAttribute('src', `${path}`)
@@ -170,6 +173,14 @@ function loopSong() {
   }
 }
 
+function togglePlayList() {
+  playlist.classList.toggle('show')
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
 // ######### Event listeners #########
 
 playBtn.addEventListener('click', () => {
@@ -205,3 +216,12 @@ audio.addEventListener('timeupdate', (e) => {
 audio.addEventListener('loadedmetadata', setDuration)
 
 progressContainer.addEventListener('click', setProgress)
+
+playlistBtn.addEventListener('click', ()=>{
+  togglePlayList()
+})
+
+closeBtn.addEventListener('click', ()=>{
+  togglePlayList()
+})
+
