@@ -1,6 +1,7 @@
 import Songs from './songs.js'
 import Helper from './modules/helper.js'
 
+// DOM Selectors
 const musicContainer = document.querySelector('.music-container')
 const previousBtn = document.querySelector('.previous')
 const playBtn = document.querySelector('.action')
@@ -15,35 +16,36 @@ const albumImage = document.querySelector('.album-image')
 const audio = document.querySelector('.audio')
 const currentTime = document.querySelector('.current-time')
 const audioDuration = document.querySelector('.duration')
-// const playlistContainer = document.querySelector('.playlist-container')
-const siteUrl = new URL(window.location)
 const playlistBtn = document.querySelector('.playlist-btn')
-const playlist = document.querySelector('.sidenav')
+const playlist = document.querySelector('.playlist')
 const closeBtn = document.querySelector('.close-btn')
+// END DOM Selectors
+const siteUrl = new URL(window.location)
 
-//current song Index
+//current song Index, Query Params, Meta Title
 let songIndex = 0
 let queryParam = new URLSearchParams(siteUrl.search)
 let siteTitle = document.title
 
 if(!queryParam.has('nasheed')){
+  // no query param
   loadSong(Songs[songIndex].path)
 } else {
+  // has query param ?nasheed=
   songIndex = getIndexFromQuery()
   loadSong(Songs[songIndex].path)
 }
-// console.log(playlistContainer)
-// Update The URL parameter To current song
 
+// Update The URL parameter To current song
 function updateUrl(path) {
   let newPath= path.split("/")[2]
   siteUrl.searchParams.set('nasheed', `${newPath}`)
   if (history.pushState) {
     var newurl = siteUrl.protocol + "//" + siteUrl.host + siteUrl.pathname + siteUrl.search;
     window.history.pushState({path:newurl},'',newurl);
+  }
 }
-}
-
+// Check query param and set the song to the nasheed
 function getIndexFromQuery() {
   if(queryParam.has('nasheed')){
   let newIndex = Songs.findIndex( Song => Song.path.includes(queryParam.get('nasheed')))
@@ -57,28 +59,27 @@ function updateMetaTitle(title) {
   document.title = siteTitle
 }
 
-function getAllSongTitle() {
+// ############ Playlist Related Functions ########## //
+
+// Sets all the available song in the playlist
+function setPlaylistSongTitles() {
   Songs.forEach((song, index) => {
-    let div = document.createElement('btn');
-    div.id = `${index}`
-    div.className = 'title list-btn';
-    div.innerText=`${song.title}`
-    playlist.appendChild(div)
-    div.addEventListener('click', ()=>{
+    let button = document.createElement('btn');
+    button.id = `btn-${index}`
+    button.className = 'title list-btn';
+    button.innerText=`${song.title}`
+    playlist.appendChild(button)
+    button.addEventListener('click', ()=>{
       songIndex = index
       loadSong(song.path)
       playSong()
     })
   })
 }
-getAllSongTitle()
+setPlaylistSongTitles()
 
-function loadSong(path) {
-  audio.setAttribute('src', `${path}`)
-  trackTitle.innerHTML = Songs[songIndex].title
-  artist.innerHTML = Songs[songIndex].artist
-  updateUrl(path) // updates the url
-  updateMetaTitle(Songs[songIndex].title) // updates the page title to current song title
+function togglePlayList() {
+  playlist.classList.toggle('show')
 }
 
 //######### Progress Bar Related functions #########
@@ -109,6 +110,14 @@ function updateCurrentTime() {
 }
 
 //######### song related functions #########
+
+function loadSong(path) {
+  audio.setAttribute('src', `${path}`)
+  trackTitle.innerHTML = Songs[songIndex].title
+  artist.innerHTML = Songs[songIndex].artist
+  updateUrl(path) // updates the url
+  updateMetaTitle(Songs[songIndex].title) // updates the page title to current song title
+}
 
 function playSong() {
   musicContainer.classList.add('play')
@@ -173,14 +182,6 @@ function loopSong() {
   }
 }
 
-function togglePlayList() {
-  playlist.classList.toggle('show')
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
 // ######### Event listeners #########
 
 playBtn.addEventListener('click', () => {
@@ -209,14 +210,6 @@ randomBtn.addEventListener('click', () => {
   }
 })
 
-audio.addEventListener('timeupdate', (e) => {
-  updateProgress(e)
-  updateCurrentTime()
-})
-audio.addEventListener('loadedmetadata', setDuration)
-
-progressContainer.addEventListener('click', setProgress)
-
 playlistBtn.addEventListener('click', ()=>{
   togglePlayList()
 })
@@ -224,4 +217,16 @@ playlistBtn.addEventListener('click', ()=>{
 closeBtn.addEventListener('click', ()=>{
   togglePlayList()
 })
+
+progressContainer.addEventListener('click', setProgress)
+
+audio.addEventListener('timeupdate', (e) => {
+  updateProgress(e)
+  updateCurrentTime()
+})
+audio.addEventListener('loadedmetadata', setDuration)
+
+
+
+
 

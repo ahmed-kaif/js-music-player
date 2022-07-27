@@ -2,14 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap');
 
-/* 
-Background color:  #fffffe
-Main color: #d1d1e9
-Highlight color: #e45858
-text color: #2b2c34
-Btn color: #6246ea
-*/
-
 * {
   box-sizing: border-box;
   font-family: 'Hind Siliguri','Roboto Slab', Arial, Helvetica, sans-serif;
@@ -164,7 +156,8 @@ a {
   cursor: pointer;
   color: var(--nord4);
   font-size: 18px;
-  margin-left: 5px;
+  margin: 5px;
+  border-bottom: 1px solid var(--nord3);
 }
 .playlist-btn {
   position: absolute;
@@ -196,16 +189,17 @@ a {
   cursor: pointer;
   background-color: #aa4d57;
 }
+
 i {
   color: var(--nord5);
 }
 
-.action {
-  /* padding: 10px 20px 10px 20px; */
-}
-
 .selected {
   background-color: var(--nord12) ;
+}
+
+.now-playing {
+  color: var(--nord12);
 }
 
 footer{
@@ -218,7 +212,7 @@ footer{
   color: var(--nord11);
 }
 
-.sidenav {
+.playlist {
   position: absolute;
   top: 0;
   left: 0;
@@ -228,30 +222,31 @@ footer{
   width: 0;
   z-index: 1;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   transition: 0.5s;
 }
 .show {
-  width: 70%;
+  width: 60%;
 }
-.sidenav a,
+/* .sidenav a,
 .sidenav button {
   padding: 5px;
   text-decoration: none;
   color: var(--nord4);
   display: block;
   transition: 0.3s;
-}
+} */
 
-.sidenav .close-btn {
+.playlist .close-btn {
   top: 0;
   left: 0px;
-  right: 25px;
+  right: 0px;
   font-size: 30px;
-  margin-left: 85%;
+  margin-left: 90%;
+  color: var(--nord4);
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .playlist {padding-top: 15px;}
+  .playlist a {font-size: 18px;}
 }
