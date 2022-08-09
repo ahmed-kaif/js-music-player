@@ -91,6 +91,7 @@ a {
   color: var(--nord4);
 }
 .track-title {
+  text-align: center;
   font-size: 35px;
   font-weight: 700;
 }
