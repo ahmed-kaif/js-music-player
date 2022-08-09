@@ -83,6 +83,11 @@ const songs = [
     title: 'খুদ্দিমানা',
     artist: 'খালিদ আল হাকান',
     path: './sounds/khuddimana.mp3',
+  },
+  {
+    title: 'মুঝে কুফাওয়ালো মুসাফির না সামঝো',
+    artist: 'শেখ আনাম',
+    path: './sounds/mujhe-kufa-walo-musafir-na-samjho.mp3',
   }
 ]
 
