@@ -88,6 +88,11 @@ const songs = [
     title: 'মুঝে কুফাওয়ালো মুসাফির না সামঝো',
     artist: 'শেখ আনাম',
     path: './sounds/mujhe-kufa-walo-musafir-na-samjho.mp3',
+  },
+  {
+    title: 'ভরা এই যৌবনে রবকে ভুলে আছ?',
+    artist: 'আবু আহমাদ আল হিন্দি',
+    path: './sounds/vora-ei-joubone.mp3',
   }
 ]
 
