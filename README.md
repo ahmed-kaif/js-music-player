@@ -4,3 +4,10 @@
 </p>
 
 Visit the [link](https://nasheed-player.netlify.app/) and enjoy some beautiful nasheeds..🥰
+
+## Features
+- List of All nasheeds
+- Shuffle Play
+- Repeat
+- Seek
+- Share a nasheed link and that nasheed will play
