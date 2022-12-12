@@ -10,6 +10,11 @@ const songs = [
     path: './sounds/pather-durotto.mp3',
   },
   {
+    title: 'নাজরে কারাম সারকার',
+    artist: 'হাজী ইউসুফ মেমোন',
+    path: './sounds/nazre-karam-sarkar.mp3',
+  },
+  {
     title: 'উতলুবুল ইলম',
     artist: 'মুহাম্মাদ আল মুকিত',
     path: './sounds/utloob-al-ilm.mp3',
@@ -70,19 +75,24 @@ const songs = [
     path: './sounds/assinu-lana.mp3',
   },
   {
-    title: 'নাজরে কারাম সারকার',
-    artist: 'হাজী ইউসুফ মেমোন',
-    path: './sounds/nazre-karam-sarkar.mp3',
-  },
-  {
     title: 'তাবসিরাহ',
     artist: 'মুহাম্মাদ আল মুকিত',
     path: './sounds/tabsirah.mp3',
   },
   {
+    title: 'দীর্ঘ আশা',
+    artist: 'আহমাদ বুখাতির',
+    path: './sounds/taweel-as-shawq.mp3',
+  },
+  {
     title: 'খুদ্দিমানা',
     artist: 'খালিদ আল হাকান',
     path: './sounds/khuddimana.mp3',
+  },
+  {
+    title: 'সিরিয়া',
+    artist: 'মুহাম্মাদ আল মুকিত',
+    path: './sounds/syria.mp3',
   },
   {
     title: 'মুঝে কুফাওয়ালো মুসাফির না সামঝো',
