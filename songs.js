@@ -35,6 +35,16 @@ const songs = [
     path: './sounds/iltija.mp3',
   },
   {
+    title: 'বিক্ষিপ্ত স্বপ্নগুলি',
+    artist: 'মাওলানা আমীর উসমানী',
+    path: './sounds/jinhe-sahar.mp3',
+  },
+  {
+    title: 'ব্যথা বাড়তেই থাকলো',
+    artist: 'মাওলানা আমীর উসমানী',
+    path: './sounds/dard-barta-gaya.mp3',
+  },
+  {
     title: 'ইলাইকা',
     artist: 'মুহাম্মাদ উবায়েদ',
     path: './sounds/Ilaika.mp3',
@@ -103,6 +113,11 @@ const songs = [
     title: 'ভরা এই যৌবনে রবকে ভুলে আছ?',
     artist: 'আবু আহমাদ আল হিন্দি',
     path: './sounds/vora-ei-joubone.mp3',
+  },
+  {
+    title: 'মা ওয়া হান্না',
+    artist: 'নাইফ আল শারহান',
+    path: './sounds/ma-wa-hanna.mp3',
   }
 ]
 
